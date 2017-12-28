@@ -19,7 +19,7 @@
 #define KOBAYAXI_H_HEADER_GUARD
 
 
-#define KOBAYAXI_CONFIG_DEBUG   1
+#define KOBAYAXI_CONFIG_DEBUG
 
 #ifdef _WIN32
 #include <windows.h>
