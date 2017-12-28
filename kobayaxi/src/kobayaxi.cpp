@@ -1,3 +1,20 @@
+/*****************************************************************************************
+ **
+ **  @author    ZiJian Jiang
+ **  @date      2017
+ **  @brief     KOBAKAXI DEBUGGING
+ **  @version   1.0
+ **
+ **   <!--#//         ______    _____            _________       _____   _____    -->
+ **   <!--#//        /     /_  /    /            \__     /      /    /__/    /      -->
+ **   <!--#//       /        \/    /    ___        /    /      /            /    ___ -->
+ **   <!--#//      /     / \      /    /\__\      /    /___   /    ___     /    /   \ -->
+ **   <!--#//    _/____ /   \___ /    _\___     _/_______ / _/___ / _/___ /    _\___/\_-->
+ **
+ **  @copyright Copyright (C) 2017. All rights reserved.
+ **
+ *****************************************************************************************/
+
 #include "kobayaxi/kobayaxi.h"
 
 namespace KOBAYAXI
@@ -7,7 +24,7 @@ namespace KOBAYAXI
 #   define KOBAYAXI_DEBUG_OUTPUT(_out)   OutputDebugStringA(_out);
 #endif
 #ifdef KOBAYAXI_PLATFORM_UNIX
-#   define KOBAYAXI_DEBUG_OUTPUT(_out)   printf(_out);
+#   define KOBAYAXI_DEBUG_OUTPUT(_out)   printf("%s", _out);
 #endif
 
 

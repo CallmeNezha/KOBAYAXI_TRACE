@@ -1,6 +1,24 @@
+/*****************************************************************************************
+ **
+ **  @author    ZiJian Jiang
+ **  @date      2017
+ **  @brief     KOBAKAXI DEBUGGING
+ **  @version   1.0
+ **
+ **   <!--#//         ______    _____            _________       _____   _____    -->
+ **   <!--#//        /     /_  /    /            \__     /      /    /__/    /      -->
+ **   <!--#//       /        \/    /    ___        /    /      /            /    ___ -->
+ **   <!--#//      /     / \      /    /\__\      /    /___   /    ___     /    /   \ -->
+ **   <!--#//    _/____ /   \___ /    _\___     _/_______ / _/___ / _/___ /    _\___/\_-->
+ **
+ **  @copyright Copyright (C) 2017. All rights reserved.
+ **
+ *****************************************************************************************/
+
 #ifndef KOBAYAXI_MACROS_H_HEADER_GUARD
 #define KOBAYAXI_MACROS_H_HEADER_GUARD
 
+#define KOBAYAXI_CONFIG_DEBUG
 
 /// Cross-platform config
 #ifdef KOBAYAXI_PLATFORM_WIN
@@ -24,7 +42,7 @@
 #define KOBAYAXI_UNLIKELY(_x)   (_x)
 #define KOBAYAXI_LIKELY(_x)     (_x)
 
-#if KOBAYAXI_CONFIG_DEBUG
+#ifdef KOBAYAXI_CONFIG_DEBUG
 #	define KOBAYAXI_CHECK _KOBAYAXI_CHECK
 #	define KOBAYAXI_TRACE _KOBAYAXI_TRACE
 #else
