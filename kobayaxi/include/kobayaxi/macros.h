@@ -54,7 +54,7 @@
 				KOBAYAXI_MACRO_BLOCK_BEGIN \
                     if (!(_condition)) \
 					{ \
-                        KOBAYAXI_TRACE("[!!!] KOBAYAXI_CHECK " _format, ##__VA_ARGS__); \
+                        KOBAYAXI_TRACE("[!!!] " _format, ##__VA_ARGS__); \
 					} \
 				KOBAYAXI_MACRO_BLOCK_END
 
