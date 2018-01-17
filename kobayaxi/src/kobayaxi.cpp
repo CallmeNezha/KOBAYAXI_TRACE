@@ -15,7 +15,7 @@
  **
  *****************************************************************************************/
 
-#include "kobayaxi/include/kobayaxi/kobayaxi.h"
+#include "kobayaxi/kobayaxi.h"
 
 namespace KOBAYAXI
 {
